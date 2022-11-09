@@ -1,6 +1,6 @@
-export { defafult as Loader } from './Loader';
-export { defafult as Footer } from './Footer';
-export { defafult as Navbar } from './Navbar';
-export { defafult as Welcome } from './Welcome';
-export { defafult as Services } from './Services';
-export { defafult as Transactions} from './Transactions';
+export { default as Loader } from './Loader';
+export { default as Footer } from './Footer';
+export { default as Navbar } from './Navbar';
+export { default as Welcome } from './Welcome';
+export { default as Services } from './Services';
+export { default as Transactions} from './Transactions';
