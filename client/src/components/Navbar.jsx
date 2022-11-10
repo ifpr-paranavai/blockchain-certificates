@@ -1,22 +1,35 @@
-import { HiMenuAlt4 } from 'react-icons/hi';
-import { AiOutlineClose } from 'react-icons/ai';
+import 'react-minimal-side-navigation/lib/ReactMinimalSideNavigation.css';
 
 const Navbar = () => {
     return (
-        <div className='w-full flex p-7 px-10' >
-            <div className=' px-12'>
+        <div className='w-full flex p-5 px-8' >
+            
+            <div className=' md:flex-[0.5] flex-initial '>
                 <img src="../../images/stuWalletLogo.png"/>
             </div>
-            <button onclick="" className='bg-[#ffffff] py-1 px-7 rounded cursor-pointer hover:bg-[#91c2dd]'>
-                Meus Dados
-            </button>
-            <button onclick="" className='bg-[296bad]  px-2 '>
-                
-            </button>
-            <br></br>
-            <button onclick="" className='bg-[#ffffff]  px-3 rounded cursor-pointer hover:bg-[#91c2dd]'>
-                Enviar Documentos
-            </button>
+            
+            
+            <div className='justify-center justify-items'>
+                <button onclick="" className='bg-[#ffffff]  px-3 rounded cursor-pointer hover:bg-[#91c2dd]'>
+                    Entrar
+                </button>
+
+                <button onclick="" className='bg-[296bad]  px-3 '>
+
+                </button>
+
+                <button onclick="" className='bg-[#ffffff]  px-3 rounded cursor-pointer hover:bg-[#91c2dd]'>
+                    Suporte
+                </button>
+
+                <button onclick="" className='bg-[296bad]  px-3 '>
+
+                </button>
+
+                <button onclick="" className='bg-[#ffffff]  px-3 rounded cursor-pointer hover:bg-[#91c2dd]'>
+                    Sobre
+                </button>
+            </div>
         </div>
         
         //<h1>Navbar</h1>
