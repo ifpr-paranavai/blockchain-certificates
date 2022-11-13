@@ -1,10 +1,19 @@
 import {SiEthereum} from 'react-icons/si'
 
 import { Loader } from './';
+//usar no Register
+import { TranContext } from "../context/TranContext.jsx";
+import React from "react";
+import {useContext} from "react";
+
 
 const Styles = "min-h-[70px] sm:px-0 px-2 sm:min-w-[120px] flex justify-center items-center border-[0.5px] border-gray-400 text-sm font-light text-white";
 
 const Welcome = () => {
+    //const {value} = useContext(TranContext);
+
+    //console.log(value);
+
     const conectarCarteiraEstudantil = () => {
 
     }
@@ -19,7 +28,7 @@ const Welcome = () => {
                         O StuWallet é um sistema feito pra você
                     </p>
                     <button type="button" onClick={conectarCarteiraEstudantil()} className="flex flex-row justify-center items-center my-5 bg-[#ffffff] p-3 rounded-full cursor-pointer hover:bg-[#16537e]">
-                        <p>Conectar AGORA</p>
+                        <p>Iniciar Cadastro</p>
                     </button>
 
                     <div className='grid sm:grid-cols-3 grid-cols-2 w-full mt-10'>
