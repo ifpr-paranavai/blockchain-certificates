@@ -59,39 +59,6 @@ const RegisterBlock = () => {
                 </div>
             </div>
         </div>
-        //  <div className="flex w-full justify-center">
-        //     <div className="App">
-        //         <form>
-        //             <input
-        //                 type="text"
-        //                 value={name}
-        //                 onChange={(e) => setName(e.target.value)}
-        //             />
-
-        //             <input
-        //                 type="file"
-        //                 value={selectedFile}
-        //                 onChange={(e) => setSelectedFile(e.target.files[0])}
-        //             />
-        //     </form>
-        //     </div>
-        // </div>
-
-        // <div className="App">
-        // <form>
-        //     <input
-        //     type="text"
-        //     value={name}
-        //     onChange={(e) => setName(e.target.value)}
-        //     />
-
-        //     <input
-        //     type="file"
-        //     value={selectedFile}
-        //     onChange={(e) => setSelectedFile(e.target.files[0])}
-        //     />
-        // </form>
-        // </div>
         
     );
 }
