@@ -5,6 +5,7 @@ import { Loader } from './';
 import { TranContext } from "../context/TranContext.jsx";
 import React from "react";
 import {useContext} from "react";
+import { useNavigate } from 'react-router-dom';
 
 
 const Styles = "min-h-[70px] sm:px-0 px-2 sm:min-w-[120px] flex justify-center items-center border-[0.5px] border-gray-400 text-sm font-light text-white";
@@ -17,6 +18,11 @@ const Welcome = () => {
     const conectarCarteiraEstudantil = () => {
 
     }
+
+    const navigate = useNavigate();
+    const vaiPraPaginaCadastro = () => {
+        navigate('/RegisterBlock');
+    }
     return (
         <div className="flex w-full justify-center">
             <div className="flex md:flex-row flex-col items-start justify-between">
@@ -27,7 +33,9 @@ const Welcome = () => {
                     <p className="text-left mt-5 text-white font-light md:w-9/12 w-11/12 text-base">
                         O StuWallet é um sistema feito pra você
                     </p>
-                    <button type="button" onClick={conectarCarteiraEstudantil()} className="flex flex-row justify-center items-center my-5 bg-[#ffffff] p-3 rounded-full cursor-pointer hover:bg-[#16537e]">
+                    <button type="button" 
+                    className="flex flex-row justify-center items-center my-5 bg-[#ffffff] p-3 rounded-full cursor-pointer hover:bg-[#16537e]"
+                    onClick={vaiPraPaginaCadastro}>
                         <p>Iniciar Cadastro</p>
                     </button>
 
