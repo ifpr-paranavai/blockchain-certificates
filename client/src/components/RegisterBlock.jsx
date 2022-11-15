@@ -1,4 +1,10 @@
+import { useNavigate } from 'react-router-dom';
+
 const RegisterBlock = () => {
+    const navigate = useNavigate();
+    const vaiPraPaginaEspera = () => {
+        navigate('/TimeScreen');
+    }
     return (
         <div className="flex w-full justify-center">
             <div className="flex md:flex-row flex-col items-start justify-between">
@@ -50,7 +56,8 @@ const RegisterBlock = () => {
                             <br />
 
                             <button type="button"
-                                className="flex flex-row justify-center items-center my-5 bg-[#ffffff] p-3 pl-8 pr-8 rounded-full cursor-pointer hover:bg-[#16537e]">
+                                className="flex flex-row justify-center items-center my-5 bg-[#ffffff] p-3 pl-8 pr-8 rounded-full cursor-pointer hover:bg-[#16537e]"
+                                onClick={vaiPraPaginaEspera}>
                                 <p>Enviar</p>
                             </button>
 
